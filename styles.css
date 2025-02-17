@@ -1,34 +1,282 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #007BFF;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.nav button {
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 400px; /* Increased height for better image display */
+    color: white;
+    text-shadow: 0 0 3px #FF0000;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.hero h1, .hero h2 {
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
     margin-top: 20px;
 }
 
-input {
-    display: block;
-    margin: 10px auto;
-    padding: 8px;
+/* Activities Section */
+.activities-heading {
+    margin: 40px 0;
 }
 
+.activities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+}
+
+#boco-1, #boco-2, #boco-3 {
+    width: 30%;
+    text-align: center;
+}
+
+.boco-imgs {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures images fill the circular container */
+}
+
+.activities p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Guide Section */
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.card .info {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    width: 100%;
+}
+
+/* Meme Generator Container */
+.container {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Meme Canvas */
 canvas {
     border: 2px solid black;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-button {
+/* Main Buttons */
+.container button {
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 12px 18px;
+    font-size: 16px;
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
+.container button:hover {
+    background-color: #218838;
+}
+
+/* Signup Container */
+#container {
+    display: flex;               /* Centering with Flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 100vh;               /* Full viewport height */
+    width: 100%;                 /* Full viewport width */
+}
+
+.signup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
 button:hover {
     background-color: #218838;
+}
+
+/*quote container*/
+#container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh;
+    width: 100%;
+}
+
+#box {
+    background-color: white;
+    color: black;
+    border: 10px solid red; /* Use a standard color like 'red' */
+    padding: 20px;
+    font-size: 8px;
+    width: 60%; /* Adjust width of the box */
+    height: 200px; /* Adjust height of the box */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents text from spilling out */
+    word-wrap: break-word; /* Ensures long words wrap to the next line */
+    text-align: center; /* Centers the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .activities {
+        flex-direction: column;
+    }
+
+    .boco-imgs {
+        height: 120px;
+    }
+
+    .guide img {
+        width: 150px;
+        height: 150px;
+    }
 }

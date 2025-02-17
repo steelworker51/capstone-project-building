@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    background-image: url('/images/battleropes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #007BFF;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.nav button {
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/*quote container*/
+#container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh;
+    width: 100%;
+}
+
+#box {
+    background-color: white;
+    color: black;
+    border: 10px solid red; /* Use a standard color like 'red' */
+    padding: 20px;
+    font-size: 8px;
+    width: 60%; /* Adjust width of the box */
+    height: 200px; /* Adjust height of the box */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents text from spilling out */
+    word-wrap: break-word; /* Ensures long words wrap to the next line */
+    text-align: center; /* Centers the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center;
+}
